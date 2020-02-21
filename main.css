@@ -55,15 +55,31 @@ img{
 }
 .section-heading h1{
     font-size: 3.5rem;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.822);
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
     margin-bottom: 1rem;
 }
 
+.section-heading h1::before,
+.section-heading h1::after{
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.section-heading h1::before{
+    width: 20rem;
+    height: 3px;
+    border-radius: 0.8rem;
+}
+
 .section-heading h6{
-    font-size: 3.5rem;
+    font-size: 1.6rem;
     color: rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
     font-weight: 300;
