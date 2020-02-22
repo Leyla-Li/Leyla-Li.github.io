@@ -397,10 +397,38 @@ li{
     background-color: pink;
 }
 
-
 /*End of Experience rules*/
 
+
+
 /*Contact rules*/
+.contact{
+    background-color: rgba(245, 206, 206, 0.582);
+}
+
+form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+form label{
+    font-size: 1.5rem;
+    color: white;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: none;
+    outline-color: white;
+}
 
 
 /*End of Contact rules*/
+
+/* Footer rules */
+
+/* End of Footer rules */
