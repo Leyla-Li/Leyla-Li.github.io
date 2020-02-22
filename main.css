@@ -22,6 +22,10 @@ body{
     background-size: cover;
 }
 
+section{
+    padding: 6rem;
+}
+
 a{
     text-decoration: none;
     color: #eee;
@@ -51,7 +55,7 @@ img{
 
 .section-heading{
     text-align: center;
-    margin-top: 10rem;
+    margin-bottom: 6rem;
 }
 .section-heading h1{
     font-size: 3.5rem;
@@ -273,7 +277,8 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 6rem;
+    padding: 3rem;
+    margin-bottom: 3rem;
 }
 
 .skill{
@@ -287,9 +292,48 @@ li{
 
 /*Portfolio rules*/
 .portfolio-item{
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
 }
 
+.portfolio-img{
+    width: 50rem;
+    flex: 1;
+    margin-right: 3rem;
+}  
+
+.portfolio-img:nth-child(2){
+    margin-right: 0;
+    margin-left: 3rem;
+}
+
+.portfolio-description h1{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+.portfolio-description h6{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: 0,3;
+}
+
+.cta{
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: rgb(55, 130, 192);
+    transition: color 650ms;
+}
+
+.cta:hover{
+    color: rgba(241, 146, 146, 0.698);
+}
 
 /*End of Portfolio rules*/
 
