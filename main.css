@@ -259,7 +259,36 @@ li{
 
 
 
+/* Skills rules */
+.my-skills{
+    margin-top: 3 rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2rem;
+    text-align: center;
+}
+
+.skill-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+}
+
+.skill{
+    font-size: 2.5rem;
+}
+
+
+/* End of Skills rules */
+
+
+
 /*Portfolio rules*/
+.portfolio-item{
+    
+}
 
 
 /*End of Portfolio rules*/
