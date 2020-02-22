@@ -22,6 +22,10 @@ body{
     background-size: cover;
 }
 
+section{
+    padding: 6rem;
+}
+
 a{
     text-decoration: none;
     color: #eee;
@@ -51,7 +55,7 @@ img{
 
 .section-heading{
     text-align: center;
-    margin-top: 10rem;
+    margin-bottom: 6rem;
 }
 .section-heading h1{
     font-size: 3.5rem;
@@ -259,17 +263,172 @@ li{
 
 
 
-/*Portfolio rules*/
+/* Skills rules */
+.my-skills{
+    margin-top: 3 rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2rem;
+    text-align: center;
+}
 
+.skill-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+.skill{
+    font-size: 2.5rem;
+}
+
+
+/* End of Skills rules */
+
+
+
+/*Portfolio rules*/
+.portfolio-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.portfolio-img{
+    width: 50rem;
+    flex: 1;
+    margin-right: 3rem;
+}  
+
+.portfolio-img:nth-child(2){
+    margin-right: 0;
+    margin-left: 3rem;
+}
+
+.portfolio-description h1{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+.portfolio-description h6{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: 0,3;
+}
+
+.cta{
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: rgb(55, 130, 192);
+    transition: color 650ms;
+}
+
+.cta:hover{
+    color: rgba(241, 146, 146, 0.698);
+}
 
 /*End of Portfolio rules*/
 
 /*Experience rules*/
+.timeline ul{
+    border-left: 4px solid white;
+    border-radius: 0.8rem;
+    background-color: tgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    position: relative;
+    padding: 5rem;
+    list-style: none;
+    text-align: left;
+    width: 70%;
+}
 
+.timeline h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    opacity: 0.6;
+}
+
+.timeline .date{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.timeline .date:last-of-type{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .date::before,
+.timeline .date::after{
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.timeline .date::before{
+    content: attr(data-date);
+    left: -21rem;
+    text-align: right;
+    min-width: 12rem;
+    font-size: 1.5rem;
+}
+
+.timeline .date::after{
+    content: '';
+    box-shadow: 0 0 0 4px white;
+    border-radius: 100%;
+    left: -6.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: pink;
+}
 
 /*End of Experience rules*/
 
+
+
 /*Contact rules*/
+.contact{
+    background-color: rgba(245, 206, 206, 0.582);
+}
+
+form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+form label{
+    font-size: 1.5rem;
+    color: white;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: none;
+    outline-color: white;
+}
 
 
 /*End of Contact rules*/
+
+/* Footer rules */
+
+/* End of Footer rules */
