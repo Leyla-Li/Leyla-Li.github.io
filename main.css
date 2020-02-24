@@ -426,6 +426,21 @@ textarea{
     outline-color: white;
 }
 
+input[type="submint"]{
+    width: initial;
+    background-color: wheat;
+    color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+
+input[type="submit"]:hover{
+    color: #221e3f;
+    background-color:rgb(211, 138, 150);
+}
+
 
 /*End of Contact rules*/
 
