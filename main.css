@@ -119,10 +119,15 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
+}
+
+.nav-list li a{
+    padding-left: 1rem;
 }
 
 li{
-    margin: 0.2rem;
+    margin: 0.3rem;
 }
 
 .nav-link{
@@ -494,3 +499,123 @@ input[type="submit"]:hover{
 }
 
 /* End of Animation Rules */
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 768px){
+    .landing-text h1{
+        font-size: 15rem;
+    }
+
+    .landing-text h6{
+        font-size: 1.7rem;
+    }
+
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .nav-list li a{
+        padding: 0;
+    }
+
+    li{
+        margin: 1rem;
+    }
+
+    .nav-link{
+        font-size: 3rem;
+    }
+
+    .detail-heading h1{
+        font-size: 8rem;
+    }
+
+    .section-heading h1{
+        font-size: 3rem;
+    }
+
+    .about-details .nav-list{
+        flex-direction: initial;
+    }
+
+    .about-details li{
+        margin: 0.4rem;
+        font-size: 1.5rem;
+    }
+
+    /* .portfolio-description p{
+        width: 30%;
+        height: initial;
+        background-color: khaki;
+        font-size: 2rem;
+    } */
+
+    /* .portfolio-img{
+        flex:1;
+    } */
+
+    .timeline ul{
+        margin: 0 0 0 auto;
+    }
+
+    .timeline .date::before{
+        left: -20rem;
+    }
+
+    .timeline .date::after{
+        left: -6.9rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .menu-toggler{
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .landing-text h1{
+        font-size: 8rem;
+    }
+
+    .landing-text h6{
+        font-size: 1.4rem;
+    }
+
+    .nav-link{
+        font-size: 3.5rem;
+    }
+
+    .about .container{
+        flex-direction: column;
+    }
+
+    .profile-img{
+        margin: 0 0 7rem 0;
+    }
+
+    .portfolio-item{
+        flex-direction: column;
+    }
+
+    .portfolio-img{
+        margin: 0 0 2rem 0;
+        order: 1;
+    }
+
+    .portfolio-description{
+        margin: 0;
+        order: 2;
+    }
+
+    .timeline p{
+        font-size: 1.5rem;
+    }
+
+    .timeline .date::before{
+        font-size: 1.4rem;
+    }
+}
+
+/* End of Media Queries */
